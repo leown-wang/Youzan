@@ -21,7 +21,6 @@
     name: "Swipe",
     props:{
       lists:{
-
       }
     },
     created() {
