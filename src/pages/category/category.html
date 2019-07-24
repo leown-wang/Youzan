@@ -23,6 +23,7 @@
 </head>
 
 <body class=" " style="">
+<div id="app">
   <div class="container with-bottom-nav" style="min-height: 667px; height: 667px;">
     <div class="custom-search js-search-bar">
       <form>
@@ -52,32 +53,17 @@
     <div class="content" style="height: 617px;">
       <div class="class-nav">
         <div id="scroll-nav" style="height: 100%;">
-          <ul class="nav" id="scroll-nav-content" style="height: 540px; transform: translate3d(0px, 0px, 0px);">
-            <li class="category-name js-category-name active" data-cid="-1">综合排行</li>
-            <li class="category-name js-category-name" data-cid="1">
-              食品酒水 </li>
-            <li class="category-name js-category-name" data-cid="800">
-              女人穿着 </li>
-            <li class="category-name js-category-name" data-cid="810">
-              男士穿着 </li>
-            <li class="category-name js-category-name" data-cid="817">
-              箱包配饰 </li>
-            <li class="category-name js-category-name" data-cid="823">
-              护肤彩妆 </li>
-            <li class="category-name js-category-name" data-cid="832">
-              数码电器 </li>
-            <li class="category-name js-category-name" data-cid="846">
-              母婴用品 </li>
-            <li class="category-name js-category-name" data-cid="863">
-              运动户外 </li>
-            <li class="category-name js-category-name" data-cid="7">
-              居家百货 </li>
+          <ul class="nav" id="scroll-nav-content" style="height: 540px; transform: translate3d(0px, 0px, 0px);" >
+            <li class="category-name js-category-name " data-cid="list.id"
+                v-for="(list,index) in topLists"
+                @click="getSubList(list.id,index)"
+                :class="{active:topIndex==index}">{{list.name}}</li>
           </ul>
         </div>
       </div>
       <div class="class-category">
         <div id="scroll-main-wrap" class="main-content">
-          <div id="scroll-main-content" class="js-main-content inner-content" style="height: 943px; transform: translate3d(0px, 0px, 0px); ">
+          <div id="scroll-main-content" class="js-main-content inner-content" style="height: 943px; transform: translate3d(0px, 0px, 0px); " v-show="topIndex==0" >
             <div class="hot-wrap">
               <div class="hot-goods">
                 <div class="hot-title">
@@ -214,8 +200,8 @@
                 </ul>
               </div>
             </div>
-          </div>
-          <div id="scroll-main-content" class="js-main-content inner-content" style="height: 534px; transform: translate3d(0px, 0px, 0px);display: none;">
+          </div >
+          <div id="scroll-main-content" class="js-main-content inner-content" style="height: 534px; transform: translate3d(0px, 0px, 0px);" v-show="topIndex>0">
             <h3 class="category-title">热门品牌 </h3>
             <ul class="category-content">
               <li class="category-item js-category-item" data-item-id="85" data-item-name="良品铺子">
@@ -302,14 +288,8 @@
       </div>
     </div>
   </div>
-  <div class="bottom-nav">
-    <ul>
-      <li><a href="https://maijia.youzan.com/mars/homepage"><i class="icon-home"></i><div>有赞</div></a></li>
-      <li class="active"><a href="https://maijia.youzan.com/mars/category"><i class="icon-category"></i><div>分类</div></a></li>
-      <li><a href="https://h5.youzan.com/v2/trade/cart?f_platform=yzapp&amp;source=yzapp"><i class="icon-cart"></i><div>购物车</div></a></li>
-      <li><a href="https://h5.youzan.com/v2/buyer/member"><i class="icon-user"></i><div>我</div></a></li>
-    </ul>
-  </div>
+  <foot></foot>
+</div>
 </body>
 
 </html>
