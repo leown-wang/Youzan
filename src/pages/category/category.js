@@ -11,19 +11,33 @@ new Vue({
   data:{
     topLists:null,
     topIndex:0,
+    subData:null,
+    rankData:null,
+
   },
   created(){
     this.getTopList()
-
+    this.getSubList(0,0)
   },
   methods:{
     getTopList(){
       axios.get(url.topList).then(res=>{
-        this.topLists = res.data.lists
-      })
-    },
+      this.topLists = res.data.lists
+    })
+  },
     getSubList(id,index){
       this.topIndex = index
+      if (index ==0){
+        axios.get(url.rank).then(res=>{
+          this.rankData = res.data.data
+        })
+      }
+      else (
+        axios.get(url.subList).then(res=>{
+          this.subData = res.data.data
+        })
+      )
+
     }
   },
   components:{
