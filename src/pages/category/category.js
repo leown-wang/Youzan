@@ -38,6 +38,9 @@ new Vue({
         })
       )
 
+    },
+    toSearch(list){
+      location.href = `search.html?keyword=${list.name}&id=${list.id}`
     }
   },
   components:{
