@@ -2610,6 +2610,11 @@ mint-ui@^2.2.13:
     raf.js "0.0.4"
     vue-lazyload "^1.0.1"
 
+mixin.js@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.npm.taobao.org/mixin.js/download/mixin.js-1.0.2.tgz#708e5b524e50380abd26639be5539967a0281bfe"
+  integrity sha1-cI5bUk5QOAq9JmOb5VOZZ6AoG/4=
+
 "mkdirp@>=0.5 0", mkdirp@^0.5.1, mkdirp@~0.5.0, mkdirp@~0.5.1:
   version "0.5.1"
   resolved "http://registry.npm.taobao.org/mkdirp/download/mkdirp-0.5.1.tgz#30057438eac6cf7f8c4767f38648d6697d75c903"
