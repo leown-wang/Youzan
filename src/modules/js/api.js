@@ -7,7 +7,12 @@ let url = {
   searchList:'/search/list',
   details:'/goods/details',
   deal:'/goods/deal',
-  addCart:'/cart/add'
+  cartAdd:'/cart/add',
+  cartUpdate:'/cart/update',
+  cartLists:'/cart/list',
+  cartReduce:'/cart/reduce',
+  cartRemove:'/cart/remove',
+  cartMrremove:'/cart/mrremove',
 }
 
 
