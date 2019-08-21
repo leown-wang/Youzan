@@ -1,21 +1,30 @@
-import "./member_base.css"
-import "./member.css"
-
-import axios from 'axios'
 import Vue from 'vue'
-import url from 'js/api.js'
+import Router from 'vue-router'
+Vue.use(Router)
+
+let routes = [{
+  path: '/',
+  component: require('./components/member.vue')
+},{
+  path: '/address',
+  component: require('./components/address.vue'),
+  children: [{
+    path: '',
+    component: require('./components/all.vue')
+  },{
+    path: 'all',
+    component: require('./components/all.vue')
+  },{
+    path: 'form',
+    component: require('./components/form.vue')
+  }]
+}]
+
+let router = new Router({
+  routes
+})
 
 new Vue({
-  el:'#app',
-  data:{
-
-  },
-  created(){
-
-  },
-  methods:{
-
-  },
-  components:{
-  }
+  el: '#app',
+  router
 })

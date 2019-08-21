@@ -7,12 +7,17 @@ let url = {
   searchList:'/search/list',
   details:'/goods/details',
   deal:'/goods/deal',
-  cartAdd:'/cart/add',
-  cartUpdate:'/cart/update',
-  cartLists:'/cart/list',
-  cartReduce:'/cart/reduce',
-  cartRemove:'/cart/remove',
-  cartMrremove:'/cart/mrremove',
+  cartAdd: '/cart/add',
+  cartRemove: '/cart/remove',
+  cartMremove: '/cart/mremove',
+  cartReduce: '/cart/reduce',
+  cartLists: '/cart/list',
+  cartUpdate: '/cart/update',
+  addressLists: '/address/list',
+  addressAdd: '/address/add',
+  addressRemove: '/address/remove',
+  addressUpdate: '/address/update',
+  addressSetDefault: '/address/setDefault'
 }
 
 
