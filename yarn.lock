@@ -2130,8 +2130,9 @@ inherits@2.0.1:
   resolved "http://registry.npm.taobao.org/inherits/download/inherits-2.0.1.tgz#b17d08d326b4423e568eff719f91b0b1cbdf69f1"
 
 ini@^1.3.4, ini@~1.3.0:
-  version "1.3.4"
-  resolved "http://registry.npm.taobao.org/ini/download/ini-1.3.4.tgz#0537cb79daf59b59a1a517dff706c86ec039162e"
+  version "1.3.7"
+  resolved "https://registry.yarnpkg.com/ini/-/ini-1.3.7.tgz#a09363e1911972ea16d7a8851005d84cf09a9a84"
+  integrity sha512-iKpRpXP+CrP2jyrxvg1kMUpXDyRUFDWurxbnVT1vQPx+Wz9uCYsMIqYuSBLV+PAaZG/d7kRLKRFc9oDMsH+mFQ==
 
 interpret@^1.0.0:
   version "1.0.3"
@@ -2609,11 +2610,6 @@ mint-ui@^2.2.13:
     array-find-index "^1.0.2"
     raf.js "0.0.4"
     vue-lazyload "^1.0.1"
-
-mixin.js@^1.0.2:
-  version "1.0.2"
-  resolved "https://registry.npm.taobao.org/mixin.js/download/mixin.js-1.0.2.tgz#708e5b524e50380abd26639be5539967a0281bfe"
-  integrity sha1-cI5bUk5QOAq9JmOb5VOZZ6AoG/4=
 
 "mkdirp@>=0.5 0", mkdirp@^0.5.1, mkdirp@~0.5.0, mkdirp@~0.5.1:
   version "0.5.1"
