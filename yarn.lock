@@ -2610,11 +2610,6 @@ mint-ui@^2.2.13:
     raf.js "0.0.4"
     vue-lazyload "^1.0.1"
 
-mixin.js@^1.0.2:
-  version "1.0.2"
-  resolved "https://registry.npm.taobao.org/mixin.js/download/mixin.js-1.0.2.tgz#708e5b524e50380abd26639be5539967a0281bfe"
-  integrity sha1-cI5bUk5QOAq9JmOb5VOZZ6AoG/4=
-
 "mkdirp@>=0.5 0", mkdirp@^0.5.1, mkdirp@~0.5.0, mkdirp@~0.5.1:
   version "0.5.1"
   resolved "http://registry.npm.taobao.org/mkdirp/download/mkdirp-0.5.1.tgz#30057438eac6cf7f8c4767f38648d6697d75c903"
@@ -3955,8 +3950,9 @@ ultron@~1.1.0:
   resolved "http://registry.npm.taobao.org/ultron/download/ultron-1.1.0.tgz#b07a2e6a541a815fc6a34ccd4533baec307ca864"
 
 underscore@^1.8.3:
-  version "1.8.3"
-  resolved "http://registry.npm.taobao.org/underscore/download/underscore-1.8.3.tgz#4f3fb53b106e6097fcf9cb4109f2a5e9bdfa5022"
+  version "1.13.1"
+  resolved "https://registry.yarnpkg.com/underscore/-/underscore-1.13.1.tgz#0c1c6bd2df54b6b69f2314066d65b6cde6fcf9d1"
+  integrity sha512-hzSoAVtJF+3ZtiFX0VgfFPHEDRm7Y/QPjGyNo4TVdnDTdft3tr8hEkD25a1jC+TjTuE7tkHGKkhwCgs9dgBB2g==
 
 uniq@^1.0.1:
   version "1.0.1"
